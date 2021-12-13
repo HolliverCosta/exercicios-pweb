@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link href="estilos.css" rel="stylesheet">
+  <title>Introdução a CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="nav-bar">
+    <h1>Cursos Online Computação@UFCG</h1>
+
+    <nav>
+      <a href="#">Python</a>
+      <a href="#">Java</a>
+      <a href="#">JavaScript</a>
+      <a href="#">Unix</a>
+      <a href="#">Machine Learning</a>
+      <a href="#">IA</a>
+      <a href="#">FAQ</a>
+    </nav>
+  </header>
+
+  <main>
+    <header>
+      <h2>CSS: design visual para a Web</h2>
+
+      <p>
+        <img src="https://s.gravatar.com/avatar/0a68ac09b7ffaa62432b00152b5ddf84?s=50&r=g" alt="foto dalton" width="50">
+        Postado por <strong>Dalton Serey</strong> em 
+        <time datetime="2021-12-02 11:20">02 de dezembro 2021</time>
+      </p>
+
+      <img src="images/css.jpg" alt="CSS" id="css">
+    </header>
+
+    <p> Web Apps modernos dependem cada vez mais de frontends
+    funcionais, eficientes e, não menos importante,
+    <strong>atrativos</strong>. É nesse contexto que o trio de
+    linguagens da Web brilha. HTML é a linguagem veículo dos
+    conteúdos e da estrutura. JavaScript a linguagem do
+    comportamento, da lógica da interatividade. E, por fim, cabe a
+    CSS abordar todos os aspectos relativos à apresentação do
+    conteúdo e, portanto, parte significativa daquilo que definimos
+    como a <strong>atratividade</strong> do aplicativo.</p>
+
+    <p>Neste post, focamos na importância de se aprender e usar
+    CSS corretamente, como forma de maximizar as chances de
+    produzirmos web apps de sucesso.</p>
+
+    <h3>CSS</h3>
+
+    <p>CSS (<strong>C</strong>ascading <strong>S</strong>tyle
+    <strong>S</strong>heets) é uma linguagem de <a
+    href="https://en.wikipedia.org/wiki/Style_sheet_language">folhas
+    de estilo</a>. Tal como HTML, é uma linguagem declarativa que
+    permite especificar regras de apresentação e estilização de
+    elementos HTML. É com base nessas regras que o <a
+    href="https://developer.mozilla.org/en-US/docs/Glossary/Rendering_engine"><em>Rendering
+    Engine</em></a> do browser irá gerar os detalhes das
+    representações visuais dos elementos. As regras incluem
+    informações sobre distribuição espacial (<em>layout</em>),
+    tamanhos, fontes, cores, etc.</p>
+
+    <p>Infelizmente, há certo preconceito por parte de alguns
+    engenheiros de software com relação a CSS. Os motivos são
+    vários: a linguagem deveria ser ferramenta de trabalho do
+    designer; a linguagem é difícil de controlar e, em geral, requer
+    conhecer dezenas de propriedades e uma sintaxe um pouco
+    criptográfica para selecionar elementos; a linguagem não tem (ou
+    tem pouco) suporte para decompor e estruturar código grande de
+    folhas de estilo ao estilo das linguagens de programação; etc.
+    Por um lado, estas afirmações têm base. Por outro, esses são
+    justamente os motivos pelos quais é necessário estudar e dominar
+    a linguagem ao invés de insistir em abordagens de codificação
+    baseadas em tentativa e erro (na verdade, esses motivos somados
+    ao fato de que a linguagem é o padrão de fato para design de
+    páginas e aplicativos web.<p>
+
+    <h3>Regras CSS</h3>
+
+    <p>Uma regra CSS é extremamente simples. Cada regra especifica um
+    conjunto de elementos do HTML aos quais a regra se destina e um
+    conjunto de declarações que especificam os valores de várias
+    propriedades visuais e de apresentação que o browser deve usar
+    ao renderizar e pintar o elemento. Essas duas partes são
+    conhecidas:</p>
+
+    <ol>
+      <li>um seletor; e</li>
+      <li>um bloco de declarações.</li>
+    </ol>
+
+    <p>Várias propriedades dos mais diversos elementos podem ter
+    seus valores ajustados com regras CSS. Abaixo algumas das
+    propriedades mais importantes que os browsers usam ao
+    renderizar texto:</p>
+
+    <ul>
+      <li><code>font-family</code></li>
+      <li><code>font-size</code></li>
+      <li><code>font-weight</code></li>
+      <li><code>font-style</code></li>
+      <li><code>text-align</code></li>
+    </ul>
+
+    <p id="botoes">
+      <button>✅ Inscreva-se</button>
+      <button>❤️  Curtir</button>
+    </p>
+
+  </main>
+
+  <aside>
+    <h4>Cursos relacionados</h4>
+
+    <ul>
+      <li>
+        <img src="images/ia-logo.png" alt="Logo de IA" width="75" class="logo">
+        <p><a href="#">Algoritmos e Estruturas de Dados para IA</a></p>
+        <p>
+          <img src="https://s.gravatar.com/avatar/1b5c6e7bd3d25dd07b14c6f6a34b8c35?s=30&r=g" alt="foto joao" width="25">
+          Prof. João Arthur Brunnet
+        </p>
+      </li>
+      <li>
+        <img src="images/node-logo.png" alt="Logo Node" width="75" class="logo">
+        <p><a href="#">Backends com Node</a></p>
+        <p>
+          <img src="https://s.gravatar.com/avatar/7eb1b7c9a91d2f8c0831b14c215070aa?s=30&r=g" alt="foto matheus" width="25">
+          Prof. Matheus Gaudêncio
+        </p>
+      </li>
+      <li>
+        <img src="images/wc-logo.png" alt="Logo Web Components" width="75" class="logo">
+        <p><a href="#">Web Components sem Frameworks</a></p>
+        <p class="related-author">
+          <img src="https://s.gravatar.com/avatar/0a68ac09b7ffaa62432b00152b5ddf84?s=30&r=g" alt="foto dalton" width="25">
+          Prof. Dalton Serey
+        </p>
+      </li>
+    </ul>
+  </aside>
+
+  <footer>
+    <p>&copy; 2021 Computação@UFCG</p>
+  </footer>
+</body>
+</html>

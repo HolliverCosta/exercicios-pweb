@@ -1,0 +1,5 @@
+pytest==6.2.5
+beautifulsoup4==4.10.0
+Online-W3C-Validator==0.3.11
+lxml
+html5lib
